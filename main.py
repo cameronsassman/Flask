@@ -3,7 +3,9 @@ from flask_mail import *
 from flask import *
 import smtplib
 
+
 app=Flask(__name__)
+
 @app.route('/')
 def Index():
     return  render_template('index.html')
